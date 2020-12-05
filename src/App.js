@@ -11,49 +11,53 @@ function App() {
   return (
     <div className="app">
       <Router>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">About</Link>
-            </li>
-            <li>
-              <Link to="/skills">Skills</Link>
-            </li>
-            <li>
-              <Link to="/education">Education</Link>
-            </li>
-            <li>
-              <Link to="/experience">Experience</Link>
-            </li>
-            <li>
-              <Link to="/work">Work</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
+        <div className="app__navbar">
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">About</Link>
+              </li>
+              <li>
+                <Link to="/skills">Skills</Link>
+              </li>
+              <li>
+                <Link to="/education">Education</Link>
+              </li>
+              <li>
+                <Link to="/experience">Experience</Link>
+              </li>
+              <li>
+                <Link to="/work">Work</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-        <Switch>
-          <Route path="/skills">
-            <Skills />
-          </Route>
-          <Route path="/education">
-            <Education />
-          </Route>
-          <Route path="/experience">
-            <Experience />
-          </Route>
-          <Route path="/work">
-            <Work />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <About />
-          </Route>
-        </Switch>
+        <div className="app__body">
+          <Switch>
+            <Route path="/skills">
+              <Skills />
+            </Route>
+            <Route path="/education">
+              <Education />
+            </Route>
+            <Route path="/experience">
+              <Experience />
+            </Route>
+            <Route path="/work">
+              <Work />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/">
+              <About />
+            </Route>
+          </Switch>
+        </div>
       </Router>
     </div>
   );
