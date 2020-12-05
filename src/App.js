@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./About";
 import Skills from "./Skills";
 import Education from "./Education";
@@ -11,20 +11,43 @@ function App() {
   return (
     <div className="app">
       <Router>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">About</Link>
+            </li>
+            <li>
+              <Link to="/skills">Skills</Link>
+            </li>
+            <li>
+              <Link to="/education">Education</Link>
+            </li>
+            <li>
+              <Link to="/experience">Experience</Link>
+            </li>
+            <li>
+              <Link to="/work">Work</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+
         <Switch>
-          <Route path="/skills/">
+          <Route path="/skills">
             <Skills />
           </Route>
-          <Route path="/education/">
+          <Route path="/education">
             <Education />
           </Route>
-          <Route path="/experience/">
+          <Route path="/experience">
             <Experience />
           </Route>
-          <Route path="/work/">
+          <Route path="/work">
             <Work />
           </Route>
-          <Route>
+          <Route path="/contact">
             <Contact />
           </Route>
           <Route path="/">
