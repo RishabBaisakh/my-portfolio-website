@@ -1,10 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./About";
 import Skills from "./Skills";
 import Education from "./Education";
 import Work from "./Work";
-import Experience from "./Education";
+import Experience from "./Experience";
 import Contact from "./Contact";
 import Sidebar from "./Sidebar";
 
@@ -43,7 +43,7 @@ function App() {
     {
       title: "Contact",
       link: "/contact",
-      caption: "Feel free to reach me out",
+      caption: "Feel free to reach out to me",
       component: <Contact />,
     },
   ];
@@ -61,6 +61,7 @@ function App() {
             .reverse()
             .map((data, index) => {
               console.log("data => ", data);
+              console.log(data);
 
               return (
                 <Route key={index} path={data.link}>

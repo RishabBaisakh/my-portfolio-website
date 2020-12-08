@@ -1,0 +1,31 @@
+.contact {
+  padding: 0 30px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.contact__formField {
+  margin-bottom: 10px;
+}
+
+.contact__footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  border-top: 1px solid gray;
+}
+
+.contact__footer > .MuiSvgIcon-root {
+  font-size: 45px;
+  transition: 200ms color ease-in;
+}
+
+.contact__footer > .MuiSvgIcon-root:hover {
+  color: blue;
+}
