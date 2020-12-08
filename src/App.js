@@ -25,7 +25,7 @@ function App() {
     {
       title: "Education",
       link: "/education",
-      caption: "Where all the beginning happens",
+      caption: "Where all the beginnings happen",
       component: <Education />,
     },
     {
@@ -51,21 +51,28 @@ function App() {
   return (
     <div className="app">
       <Router>
-        <div className="app__sidebar">
+        <div className="app__left">
           <Sidebar sidebarNavData={navData} />
         </div>
 
         <Switch>
-          {navData.map((data) => {
-            return (
-              <>
-                <Route path={data.link}>
-                  <div className="app__header">{data.caption}</div>
-                  <div className="app__body">{data.component}</div>
+          {navData
+            .slice(0)
+            .reverse()
+            .map((data, index) => {
+              console.log("data => ", data);
+
+              return (
+                <Route key={index} path={data.link}>
+                  <div className="app__right">
+                    <div className="app__header">
+                      <h3>{data.caption}....</h3>
+                    </div>
+                    <div className="app__body">{data.component}</div>
+                  </div>
                 </Route>
-              </>
-            );
-          })}
+              );
+            })}
         </Switch>
       </Router>
     </div>

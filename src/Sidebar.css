@@ -7,7 +7,6 @@
   border-radius: 100% / 50%;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  margin: 20px 0;
   padding: 20px 0;
 }
 
@@ -18,13 +17,14 @@
   padding-right: 40px;
 }
 
-.sidebar__links > h2 {
+.sidebar__links > h4 {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 100;
   color: gray;
   transition: 200ms color ease-in;
 }
 
-.sidebar__links > h2:hover {
+.sidebar__links > h4:hover {
   color: white;
+  font-weight: 900;
 }
