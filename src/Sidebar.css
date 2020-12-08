@@ -1,0 +1,26 @@
+.sidebar {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(28, 28, 80);
+  border-radius: 100% / 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.sidebar__links {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar__links > h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.sidebar__links > h2:hover {
+  font-size: 40px;
+}

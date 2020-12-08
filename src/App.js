@@ -6,34 +6,14 @@ import Education from "./Education";
 import Work from "./Work";
 import Experience from "./Education";
 import Contact from "./Contact";
+import Sidebar from "./Sidebar";
 
 function App() {
   return (
     <div className="app">
       <Router>
-        <div className="app__navbar">
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">About</Link>
-              </li>
-              <li>
-                <Link to="/skills">Skills</Link>
-              </li>
-              <li>
-                <Link to="/education">Education</Link>
-              </li>
-              <li>
-                <Link to="/experience">Experience</Link>
-              </li>
-              <li>
-                <Link to="/work">Work</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </nav>
+        <div className="app__sidebar">
+          <Sidebar />
         </div>
 
         <div className="app__body">
