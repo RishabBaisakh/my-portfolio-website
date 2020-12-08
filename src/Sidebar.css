@@ -14,13 +14,16 @@
 .sidebar__links {
   text-decoration: none;
   color: white;
+  margin: 20px 10px;
 }
 
 .sidebar__links > h2 {
   font-size: 30px;
   font-weight: 200;
+  color: gray;
+  transition: 200ms color ease-in;
 }
 
 .sidebar__links > h2:hover {
-  font-size: 40px;
+  color: white;
 }
