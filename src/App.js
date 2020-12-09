@@ -37,7 +37,7 @@ function App() {
     {
       title: "Work",
       link: "/work",
-      caption: "Something I did for fun",
+      caption: "Few projects that I would like show",
       component: <Work />,
     },
     {
