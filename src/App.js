@@ -59,12 +59,9 @@ function App() {
           {navData
             .slice(0)
             .reverse()
-            .map((data, index) => {
-              console.log("data => ", data);
-              console.log(data);
-
+            .map((data) => {
               return (
-                <Route key={index} path={data.link}>
+                <Route path={data.link}>
                   <div className="app__right">
                     <div className="app__header">
                       <h3>{data.caption}....</h3>

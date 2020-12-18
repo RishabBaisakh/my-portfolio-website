@@ -3,7 +3,7 @@ import "./Work.css";
 
 function Work() {
   return (
-    <div classNaame="work">
+    <div className="work">
       <div className="work__projectCard">
         <div className="work__projectCardLeft">
           <h5>Slack clone</h5>
