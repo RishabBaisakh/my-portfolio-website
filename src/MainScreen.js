@@ -1,4 +1,5 @@
 import React from "react";
+import "./MainScreen.css";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Skills from "./Skills";
 import Education from "./Education";
@@ -12,28 +13,30 @@ function MainScreen() {
       <Router>
         <Switch>
           <Route path="/skills">
-            <MainOptionLayout>
+            <MainOptionLayout link="Skills">
               <Skills />
             </MainOptionLayout>
           </Route>
           <Route path="/education">
-            <MainOptionLayout>
+            <MainOptionLayout link="Education">
               <Education />
             </MainOptionLayout>
           </Route>
           <Route path="/experience">
-            <MainOptionLayout>
+            <MainOptionLayout link="Experience">
               <Experience />
             </MainOptionLayout>
           </Route>
           <Route path="/projects">
-            <MainOptionLayout>
+            <MainOptionLayout link="Projects">
               <Projects />
             </MainOptionLayout>
           </Route>
           <Route path="/">
-            <h1>Rishab Baisakh</h1>
-            <h2>Web Developer</h2>
+            <div className="mainScreen__header">
+              <h1>Rishab Baisakh</h1>
+              <h2>Web Developer</h2>
+            </div>
 
             <div className="mainScreen__options">
               <ul>

@@ -1,0 +1,12 @@
+.mainOptionLayout__topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mainOptionLayout__topbar > .MuiSvgIcon-root {
+  cursor: pointer;
+}

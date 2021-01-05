@@ -1,0 +1,13 @@
+.mainScreen {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+
+.mainScreen__options > ul > li {
+  list-style-type: none;
+}
+
+.mainScreen__options > ul > li > a {
+  text-decoration: none;
+}
