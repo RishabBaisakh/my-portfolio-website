@@ -6,9 +6,20 @@ function Skills() {
       <h1>Languages</h1>
       <ul>
         <li>JavaScript</li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>SQL</li>
+      </ul>
+
+      <h1>Frameworks</h1>
+      <ul>
+        <li>ReactJS</li>
+        <li>Angular 2+</li>
+        <li>JQuery</li>
+        <li>Unity</li>
+        <li>Android Studio</li>
       </ul>
     </div>
   );

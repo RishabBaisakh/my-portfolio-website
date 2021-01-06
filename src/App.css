@@ -1,0 +1,19 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+      to bottom right,
+      black,
+      rgba(255, 255, 255, 0.212)
+    ),
+    url("https://www.innovwebsolutions.com/wp-content/themes/twentyseventeen/assets/images/mid2.jpg");
+}
+
+.app__sidebar {
+  flex: 0.25;
+}
+
+.app__body {
+  flex: 0.75;
+}
