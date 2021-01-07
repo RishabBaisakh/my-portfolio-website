@@ -7,27 +7,19 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar__header">
         <img src="myImage.png" alt="" />
-        <h1>Rishab Baisakh</h1>
-        <h2>Web Developer</h2>
+        <Link to="/">
+          <h1>Rishab Baisakh</h1>
+          <h2>Web Developer</h2>
+        </Link>
       </div>
 
       <div className="sidebar__links">
         <ul>
-          <li>
-            <Link to="/skills">Skills</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/education">Education</Link>
-          </li>
-          <li>
-            <Link to="/experience">Experience</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
+          <Link to="/skills">{"<Skills />"}</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/education">Education</Link>
+          <Link to="/experience">Experience</Link>
+          <Link to="/contact">Contact</Link>
         </ul>
       </div>
     </div>

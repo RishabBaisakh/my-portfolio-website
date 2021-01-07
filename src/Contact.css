@@ -1,0 +1,81 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__header {
+  margin: 30px;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.contact__header > h1 {
+  font-size: 40px;
+}
+
+.contact__body {
+  display: flex;
+}
+
+.contact__bodyLeft {
+  flex: 0.5;
+  height: 80vh;
+  border-right: 1px solid white;
+}
+
+.contact__bodyLeft > form {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+}
+
+.contact__bodyLeft > form > label {
+  font-size: 25px;
+}
+
+.contact__bodyLeft > form > input {
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.contact__bodyLeft > form > textarea {
+  outline: none;
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.contact__bodyLeft > form > button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: darkorchid;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact__bodyRight {
+  flex: 0.5;
+  color: white;
+  margin-top: 50px;
+}
+
+.contact__bodyRight > .contact__networks {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.contact__bodyRight > .contact__networks > .MuiSvgIcon-root {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.contact__bodyRight > .contact__networks > p {
+  font-size: 25px;
+}
