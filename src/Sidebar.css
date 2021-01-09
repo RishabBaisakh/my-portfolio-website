@@ -4,6 +4,7 @@
   height: 100vh;
   background-color: rgba(220, 20, 60, 0.377);
   color: white;
+  position: relative;
 }
 
 .sidebar__header {
@@ -59,4 +60,21 @@
 
 .sidebar__links > ul > a:hover {
   color: white;
+}
+
+.sidebar__bottom {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sidebar__bottom > a {
+  color: white;
+}
+
+.sidebar__bottom > a:hover {
+  transform: scale(1.3);
 }

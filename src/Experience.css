@@ -1,0 +1,37 @@
+.experience__row {
+  color: white;
+}
+
+.experience__rowHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience__rowHeader > h1 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.experience__title {
+  margin: 10px 0;
+  font-weight: 300;
+}
+
+.experience__location {
+  color: lightskyblue;
+  display: flex;
+}
+
+.experience__location > .MuiSvgIcon-root {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.experience__responsibilities > li {
+  margin-bottom: 5px;
+}
+
+.experience__responsibilities > li > p {
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+}

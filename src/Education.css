@@ -1,13 +1,15 @@
 .education__row {
   color: white;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 1px white;
-  padding: 10px;
 }
 
-.education__row > h1 {
-  font-size: 30px;
+.education__rowHeader {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.education__rowHeader > h1 {
+  font-size: 30px;
   font-weight: 300;
 }
 

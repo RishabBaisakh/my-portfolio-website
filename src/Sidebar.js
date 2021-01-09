@@ -1,6 +1,9 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Sidebar.css";
+import EmailIcon from "@material-ui/icons/Email";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 function Sidebar() {
   const location = useLocation();
@@ -25,6 +28,18 @@ function Sidebar() {
           <Link to="/experience">Experience</Link>
           <Link to="/contact">Contact</Link>
         </ul>
+      </div>
+
+      <div className="sidebar__bottom">
+        <a href="#">
+          <EmailIcon />
+        </a>
+        <a href="#">
+          <GitHubIcon />
+        </a>
+        <a href="#">
+          <LinkedInIcon />
+        </a>
       </div>
     </div>
   );

@@ -9,3 +9,9 @@ body {
   font-family: "Acme", sans-serif;
   /* font-family: 'Montserrat', sans-serif; */
 }
+
+.myRowLayout {
+  margin-bottom: 30px;
+  box-shadow: 0 2px 1px white;
+  padding: 10px;
+}
