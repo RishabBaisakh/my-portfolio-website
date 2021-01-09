@@ -54,6 +54,7 @@
   color: rgba(211, 211, 211, 0.61);
   font-weight: 100;
   margin-bottom: 5px;
+  transition: 250ms color ease-in;
 }
 
 .sidebar__links > ul > a:hover {
