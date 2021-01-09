@@ -3,16 +3,6 @@
   flex-direction: column;
 }
 
-.contact__header {
-  margin: 30px;
-  border-bottom: 1px solid white;
-  color: white;
-}
-
-.contact__header > h1 {
-  font-size: 40px;
-}
-
 .contact__body {
   display: flex;
 }

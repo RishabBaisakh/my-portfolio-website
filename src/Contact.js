@@ -8,10 +8,6 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 function Contact() {
   return (
     <div className="contact">
-      <div className="contact__header">
-        <h1>Get in touch... </h1>
-      </div>
-
       <div className="contact__body">
         <div className="contact__bodyLeft">
           <form>

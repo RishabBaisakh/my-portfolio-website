@@ -8,6 +8,7 @@ import Projects from "./Projects";
 import Education from "./Education";
 import Experience from "./Experience";
 import Contact from "./Contact";
+import MainScreenLayout from "./MainScreenLayout";
 
 function App() {
   return (
@@ -19,19 +20,29 @@ function App() {
         <div className="app__body">
           <Switch>
             <Route path="/skills">
-              <Skills />
+              <MainScreenLayout title="Skills">
+                <Skills />
+              </MainScreenLayout>
             </Route>
             <Route path="/projects">
-              <Projects />
+              <MainScreenLayout title="Projects">
+                <Projects />
+              </MainScreenLayout>
             </Route>
             <Route path="/education">
-              <Education />
+              <MainScreenLayout title="Education">
+                <Education />
+              </MainScreenLayout>
             </Route>
             <Route path="/experience">
-              <Experience />
+              <MainScreenLayout title="Experience">
+                <Experience />
+              </MainScreenLayout>
             </Route>
             <Route path="/contact">
-              <Contact />
+              <MainScreenLayout title="Get in Touch">
+                <Contact />
+              </MainScreenLayout>
             </Route>
             <Route path="/">
               <Welcome />

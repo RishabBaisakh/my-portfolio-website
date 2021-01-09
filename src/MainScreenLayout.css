@@ -1,0 +1,17 @@
+.mainScreenLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainScreenLayout__header > h1 {
+  color: white;
+  font-size: 40px;
+  padding: 20px 0;
+  margin: 0 30px;
+  border-bottom: 1px solid white;
+  /* box-shadow: 3px 2px 3.5px white; */
+}
+
+.mainScreenLayout__body {
+  margin: 20px 30px;
+}
