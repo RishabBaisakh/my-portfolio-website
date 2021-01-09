@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Sidebar.css";
 import EmailIcon from "@material-ui/icons/Email";
@@ -7,8 +7,11 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 function Sidebar() {
   const location = useLocation();
-
-  console.log("location => ", location);
+  const [hoverLink, setHoverLink] = useState("");
+  const LinkData = ["Skills", "Projects", "Education", "Experience", "Contact"];
+  const activeLinkStyle = {
+    color: "white",
+  };
 
   return (
     <div className="sidebar">
@@ -22,22 +25,35 @@ function Sidebar() {
 
       <div className="sidebar__links">
         <ul>
-          <Link to="/skills">{"<Skills />"}</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/education">Education</Link>
-          <Link to="/experience">Experience</Link>
-          <Link to="/contact">Contact</Link>
+          {LinkData.map((link, index) => (
+            <Link
+              onMouseEnter={() => setHoverLink(link)}
+              onMouseLeave={() => setHoverLink("")}
+              style={
+                location.pathname === `/${link.toLowerCase()}`
+                  ? activeLinkStyle
+                  : null
+              }
+              key={index}
+              to={`/${link.toLowerCase()}`}
+            >
+              {location.pathname === `/${link.toLowerCase()}` ||
+              link === hoverLink
+                ? `<${link} />`
+                : link}
+            </Link>
+          ))}
         </ul>
       </div>
 
       <div className="sidebar__bottom">
-        <a href="#">
+        <a href="mailto:rishab.baisakh@gmail.com">
           <EmailIcon />
         </a>
-        <a href="#">
+        <a href="https://github.com/RishabBaisakh">
           <GitHubIcon />
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/rishab-baisakh/">
           <LinkedInIcon />
         </a>
       </div>
