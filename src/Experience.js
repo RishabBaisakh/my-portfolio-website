@@ -5,7 +5,7 @@ import LocationOnIcon from "@material-ui/icons/LocationOn";
 function Experience() {
   return (
     <div className="experience">
-      <div className="experience__row myRowLayout">
+      <div className="experience__row myCardLayout">
         <div className="experience__rowHeader">
           <h1>FlexiEle Consultancy Services Ltd.</h1>
           <h1>(Aug, 2018 - Aug, 2019)</h1>
