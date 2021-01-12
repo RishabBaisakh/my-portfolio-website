@@ -14,4 +14,5 @@
 
 .app__body {
   flex: 0.75;
+  overflow-y: overlay;
 }

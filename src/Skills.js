@@ -1,4 +1,5 @@
 import React from "react";
+import "./Skills.css";
 
 function Skills() {
   return (
@@ -21,6 +22,15 @@ function Skills() {
         <li>Unity</li>
         <li>Android Studio</li>
       </ul>
+
+      <h1>Database</h1>
+      <ul>
+        <li>MySQL</li>
+        <li>Firebase</li>
+      </ul>
+
+      <h1>Verion Control</h1>
+      <ul>Git</ul>
     </div>
   );
 }
