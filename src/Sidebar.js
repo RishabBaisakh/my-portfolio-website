@@ -16,7 +16,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__header">
-        <img src="my-portfolio-website/myImage.png" alt="" />
+        <img src="/my-portfolio-website/myImage.png" alt="" />
         <Link to="/">
           <h1>Rishab Baisakh</h1>
           <h2>Web Developer</h2>

@@ -32,7 +32,7 @@ function Projects() {
             href="https://github.com/RishabBaisakh/musify-mern"
             target="_blank"
           >
-            <img src="my-portfolio-website/projects/musify.png" />
+            <img src="my-portfolio-website/projects/musify.PNG" />
           </a>
         </div>
       </div>

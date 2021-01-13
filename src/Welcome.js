@@ -20,7 +20,7 @@ function Welcome() {
         </p>
       </div>
       <div className="welcome__resume">
-        <a href="my-portfolio-website/RishabBaisakhResume.pdf" target="_blank">
+        <a href="/my-portfolio-website/RishabBaisakhResume.pdf" target="_blank">
           Check out my resume
         </a>
       </div>
