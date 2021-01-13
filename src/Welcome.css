@@ -3,6 +3,31 @@
 }
 
 .welcome__text {
-  margin: 30px;
+  margin: 40px 0;
   font-size: 37px;
+  text-align: center;
+}
+
+.welcome__shortDescription {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.welcome__resume > a {
+  background-color: rgba(211, 211, 211, 0.467);
+  padding: 20px;
+  margin: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 1px 2px 4px white;
+  border-radius: 10px;
+}
+
+.welcome__resume > a:hover {
+  background-color: rgba(211, 211, 211, 0.297);
 }

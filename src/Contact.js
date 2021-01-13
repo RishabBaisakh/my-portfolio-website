@@ -28,15 +28,24 @@ function Contact() {
 
           <div className="contact__networks">
             <EmailIcon />
-            <p>rishab.baisakh@gmail.com</p>
+            <a href="mailto:rishab.baisakh@gmail.com">
+              <p>rishab.baisakh@gmail.com</p>
+            </a>
           </div>
           <div className="contact__networks">
             <GitHubIcon />
-            <p>https://github.com/RishabBaisakh</p>
+            <a href="https://github.com/RishabBaisakh" target="_blank">
+              <p>https://github.com/RishabBaisakh</p>
+            </a>
           </div>
           <div className="contact__networks">
             <LinkedInIcon />
-            <p>linkedin.com/in/rishab-baisakh</p>
+            <a
+              href="https://www.linkedin.com/in/rishab-baisakh/"
+              target="_blank"
+            >
+              <p>linkedin.com/in/rishab-baisakh</p>
+            </a>
           </div>
         </div>
       </div>

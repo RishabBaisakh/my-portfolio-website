@@ -47,13 +47,13 @@ function Sidebar() {
       </div>
 
       <div className="sidebar__bottom">
-        <a href="mailto:rishab.baisakh@gmail.com">
+        <a href="mailto:rishab.baisakh@gmail.com" target="_blank">
           <EmailIcon />
         </a>
-        <a href="https://github.com/RishabBaisakh">
+        <a href="https://github.com/RishabBaisakh" target="_blank">
           <GitHubIcon />
         </a>
-        <a href="https://www.linkedin.com/in/rishab-baisakh/">
+        <a href="https://www.linkedin.com/in/rishab-baisakh/" target="_blank">
           <LinkedInIcon />
         </a>
       </div>

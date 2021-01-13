@@ -54,17 +54,27 @@
   margin-top: 50px;
 }
 
-.contact__bodyRight > .contact__networks {
+.contact__networks {
   display: flex;
   margin-left: 20px;
   margin-bottom: 40px;
 }
 
-.contact__bodyRight > .contact__networks > .MuiSvgIcon-root {
+.contact__networks > .MuiSvgIcon-root {
   font-size: 40px;
   margin-right: 10px;
 }
 
-.contact__bodyRight > .contact__networks > p {
+.contact__networks > p {
   font-size: 25px;
+}
+
+.contact__networks > a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.contact__networks > a:hover {
+  text-decoration: underline;
 }

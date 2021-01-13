@@ -1,3 +1,35 @@
 .skills {
   color: white;
 }
+
+.skills__cardBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.skills__card > h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills__cardTechnology {
+  /* border: 1px solid white; */
+  box-shadow: 0 2px 5px white;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(211, 211, 211, 0.384);
+}
+
+.skills__cardTechnology > h2 {
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.skills__cardTechnology > img {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}

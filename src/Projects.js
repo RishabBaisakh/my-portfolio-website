@@ -28,7 +28,10 @@ function Projects() {
           </div>
         </div>
         <div className="projects__cardRight">
-          <a href="#">
+          <a
+            href="https://github.com/RishabBaisakh/musify-mern"
+            target="_blank"
+          >
             <img src="my-portfolio-website/projects/musify.png" />
           </a>
         </div>
@@ -53,7 +56,12 @@ function Projects() {
           </div>
         </div>
         <div className="projects__cardRight">
-          <img src="my-portfolio-website/projects/whatsapp.png" />
+          <a
+            href="https://github.com/RishabBaisakh/whatsapp-clone"
+            target="_blank"
+          >
+            <img src="my-portfolio-website/projects/whatsapp.png" />
+          </a>
         </div>
       </div>
       <div className="projects__card myCardLayout">
@@ -77,7 +85,9 @@ function Projects() {
           </div>
         </div>
         <div className="projects__cardRight">
-          <img src="my-portfolio-website/projects/slack.png" />
+          <a href="#">
+            <img src="my-portfolio-website/projects/slack.png" />
+          </a>
         </div>
       </div>
       <div className="projects__card myCardLayout">
@@ -102,7 +112,12 @@ function Projects() {
           </div>
         </div>
         <div className="projects__cardRight">
-          <img src="my-portfolio-website/projects/instagram.png" />
+          <a
+            href="https://github.com/RishabBaisakh/slack-clone"
+            target="_blank"
+          >
+            <img src="my-portfolio-website/projects/instagram.png" />
+          </a>
         </div>
       </div>
       <div className="projects__card myCardLayout">
@@ -123,7 +138,12 @@ function Projects() {
           </div>
         </div>
         <div className="projects__cardRight">
-          <img src="my-portfolio-website/projects/hangman.png" />
+          <a
+            href="https://github.com/RishabBaisakh/hangman-for-fun"
+            target="_blank"
+          >
+            <img src="my-portfolio-website/projects/hangman.png" />
+          </a>
         </div>
       </div>
     </div>

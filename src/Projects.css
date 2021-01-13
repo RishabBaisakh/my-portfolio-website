@@ -13,11 +13,17 @@
 }
 
 .projects__cardRight {
+  display: flex;
+  align-items: center;
   flex: 0.3;
 }
 
+.projects__cardRight > a {
+  position: relative;
+}
+
 .projects__cardRight:hover {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .projects__cardRight > img {
