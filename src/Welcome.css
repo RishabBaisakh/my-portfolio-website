@@ -14,13 +14,16 @@
   font-size: 20px;
 }
 
-.welcome__resume > a {
-  background-color: rgba(211, 211, 211, 0.467);
-  padding: 20px;
-  margin: 50px;
+.welcome__resume > div {
   position: absolute;
   bottom: 0;
   right: 0;
+  margin: 50px;
+}
+
+.welcome__resume > div > a {
+  background-color: rgba(211, 211, 211, 0.467);
+  padding: 20px;
   font-size: 30px;
   text-decoration: none;
   color: white;
@@ -28,6 +31,6 @@
   border-radius: 10px;
 }
 
-.welcome__resume > a:hover {
+.welcome__resume > div > a:hover {
   background-color: rgba(211, 211, 211, 0.297);
 }

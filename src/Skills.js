@@ -1,81 +1,138 @@
 import React from "react";
 import "./Skills.css";
+import { Animated } from "react-animated-css";
 
 function Skills() {
+  let delay = 100;
+
+  const languages = [
+    {
+      name: "JavaScript",
+      image: "js.png",
+    },
+    {
+      name: "Java",
+      image: "java.png",
+    },
+    {
+      name: "SQL",
+      image: "sql.jfif",
+    },
+    {
+      name: "C",
+      image: "c.png",
+    },
+    {
+      name: "C++",
+      image: "cpp.png",
+    },
+    {
+      name: "PHP",
+      image: "php.png",
+    },
+  ];
+
+  const frameworks = [
+    {
+      name: "ReactJS",
+      image: "react.png",
+    },
+    {
+      name: "Angular 2+",
+      image: "angular.png",
+    },
+    {
+      name: "JQuery",
+      image: "jquery.png",
+    },
+    {
+      name: "Unity",
+      image: "unity.png",
+    },
+    {
+      name: "Bootstrap",
+      image: "bootstrap.jfif",
+    },
+    {
+      name: "Zend",
+      image: "zend.png",
+    },
+  ];
+
+  const databases = [
+    {
+      name: "MySql",
+      image: "mysql.png",
+    },
+    {
+      name: "Firebase",
+      image: "firebase.png",
+    },
+  ];
+
   return (
     <div className="skills">
       <div className="skills__card">
         <h1>Languages</h1>
 
         <div className="skills__cardBody">
-          <div className="skills__cardTechnology">
-            <h2>JavaScript</h2>
-            <img src="my-portfolio-website/technologies/js.png" />
-          </div>
-          <div className="skills__cardTechnology">
-            <h2>Java</h2>
-            <img src="my-portfolio-website/technologies/java.png" />
-          </div>
-          <div className="skills__cardTechnology">
-            <h2>C</h2>
-            <img src="my-portfolio-website/technologies/c.png" />
-          </div>
-          <div className="skills__cardTechnology">
-            <h2>C++</h2>
-            <img src="my-portfolio-website/technologies/cpp.png" />
-          </div>
-          <div className="skills__cardTechnology">
-            <h2>PHP</h2>
-            <img src="my-portfolio-website/technologies/php.png" />
-          </div>
-          <div className="skills__cardTechnology">
-            <h2>SQL</h2>
-            <img src="my-portfolio-website/technologies/sql.jfif" />
-          </div>
+          {languages.map((language, index) => (
+            <Animated
+              key={index}
+              animationIn="fadeIn"
+              isVisible={true}
+              animationInDelay={`${(delay += 150)}`}
+            >
+              <div className="skills__cardTechnology">
+                <h2>{language.name}</h2>
+                <img
+                  src={`my-portfolio-website/technologies/${language.image}`}
+                />
+              </div>
+            </Animated>
+          ))}
         </div>
       </div>
 
       <div className="skills__card">
         <h1>Frameworks</h1>
         <div className="skills__cardBody">
-          <div className="skills__cardTechnology">
-            <h2>ReactJS</h2>
-            <img src="my-portfolio-website/technologies/react.png" />
-          </div>
-          <div className="skills__cardTechnology">
-            <h2>Angular 2+</h2>
-            <img src="my-portfolio-website/technologies/angular.png" />
-          </div>
-          <div className="skills__cardTechnology">
-            <h2>JQuery</h2>
-            <img src="my-portfolio-website/technologies/jquery.png" />
-          </div>
-          <div className="skills__cardTechnology">
-            <h2>Unity</h2>
-            <img src="my-portfolio-website/technologies/unity.png" />
-          </div>
-          <div className="skills__cardTechnology">
-            <h2>Bootstrap</h2>
-            <img src="my-portfolio-website/technologies/bootstrap.jfif" />
-          </div>
-          <div className="skills__cardTechnology">
-            <h2>Zend</h2>
-            <img src="my-portfolio-website/technologies/zend.png" />
-          </div>
+          {frameworks.map((framework, index) => (
+            <Animated
+              key={index}
+              animationIn="fadeIn"
+              isVisible={true}
+              animationInDelay={`${(delay += 150)}`}
+            >
+              <div className="skills__cardTechnology">
+                <h2>{framework.name}</h2>
+                <img
+                  src={`my-portfolio-website/technologies/${framework.image}`}
+                />
+              </div>
+            </Animated>
+          ))}
         </div>
       </div>
 
       <div className="skills__card">
         <h1>Database</h1>
         <div className="skills__cardBody">
-          <div className="skills__cardTechnology">
-            <h2>MySQL</h2>
-            <img src="my-portfolio-website/technologies/mysql.png" />
-          </div>
-          <div className="skills__cardTechnology">
-            <h2>Firebase</h2>
-            <img src="my-portfolio-website/technologies/firebase.png" />
-          </div>
+          {databases.map((database, index) => (
+            <Animated
+              key={index}
+              animationIn="fadeIn"
+              isVisible={true}
+              animationInDelay={`${(delay += 150)}`}
+            >
+              <div className="skills__cardTechnology">
+                <h2>{database.name}</h2>
+                <img
+                  src={`my-portfolio-website/technologies/${database.image}`}
+                />
+              </div>
+            </Animated>
+          ))}
         </div>
       </div>
     </div>
